@@ -84,7 +84,7 @@ IOFtdi::IOFtdi(int const vendor, int const product, char const *desc, char const
   }
 
   // Set interface
-  if(ftdi_set_interface(&ftdi, INTERFACE_A) < 0) {
+  if(ftdi_set_interface(&ftdi, INTERFACE_B) < 0) {
     throw  io_exception(std::string("ftdi_set_interface: ") + ftdi_get_error_string(&ftdi));
   }
 	
